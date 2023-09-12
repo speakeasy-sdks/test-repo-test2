@@ -10,7 +10,6 @@ from test import utils
 
 @dataclasses.dataclass
 class Error:
-    r"""unexpected error"""
     code: int = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('code') }})
     message: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('message') }})
     

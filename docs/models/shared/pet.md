@@ -1,7 +1,5 @@
 # Pet
 
-Expected response to a valid request
-
 
 ## Fields
 
