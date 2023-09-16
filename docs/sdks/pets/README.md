@@ -1,4 +1,4 @@
-# pets
+# Pets
 
 ### Available Operations
 

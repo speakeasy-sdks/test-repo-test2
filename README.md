@@ -30,7 +30,7 @@ if res.status_code == 200:
 ## Available Resources and Operations
 
 
-### [pets](docs/sdks/pets/README.md)
+### [Pets](docs/sdks/pets/README.md)
 
 * [create_pets](docs/sdks/pets/README.md#create_pets) - Create a pet
 * [list_pets](docs/sdks/pets/README.md#list_pets) - List all pets
