@@ -10,8 +10,6 @@ pip install git+https://github.com/speakeasy-sdks/test-repo-test2.git
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```python
 import test
 
@@ -36,6 +34,32 @@ if res.status_code == 200:
 * [list_pets](docs/sdks/pets/README.md#list_pets) - List all pets
 * [show_pet_by_id](docs/sdks/pets/README.md#show_pet_by_id) - Info for a specific pet
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `Next` method that can be called to pull down the next group of results. If the
+return value of `Next` is `None`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
