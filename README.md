@@ -28,7 +28,7 @@ if res.status_code == 200:
 ## Available Resources and Operations
 
 
-### [Pets](docs/sdks/pets/README.md)
+### [pets](docs/sdks/pets/README.md)
 
 * [create_pets](docs/sdks/pets/README.md#create_pets) - Create a pet
 * [list_pets](docs/sdks/pets/README.md#list_pets) - List all pets
@@ -38,8 +38,6 @@ if res.status_code == 200:
 
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
@@ -53,8 +51,6 @@ returned response object will have a `Next` method that can be called to pull do
 return value of `Next` is `None`, then there are no more pages to be fetched.
 
 Here's an example of one such pagination call:
-
-
 <!-- End Pagination -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
