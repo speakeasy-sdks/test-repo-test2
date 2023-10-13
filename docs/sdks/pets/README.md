@@ -24,6 +24,7 @@ res = s.pets.create_pets()
 
 if res.status_code == 200:
     # handle response
+    pass
 ```
 
 
@@ -50,6 +51,7 @@ res = s.pets.list_pets(req)
 
 if res.pets is not None:
     # handle response
+    pass
 ```
 
 ### Parameters
@@ -84,6 +86,7 @@ res = s.pets.show_pet_by_id(req)
 
 if res.pet is not None:
     # handle response
+    pass
 ```
 
 ### Parameters
