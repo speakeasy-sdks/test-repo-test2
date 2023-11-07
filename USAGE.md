@@ -4,7 +4,6 @@
 ```python
 import test
 
-
 s = test.Test()
 
 

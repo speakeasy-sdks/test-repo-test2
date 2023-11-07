@@ -3,8 +3,8 @@
 from __future__ import annotations
 import dataclasses
 import requests as requests_http
-from ..shared import error as shared_error
-from ..shared import pet as shared_pet
+from ...models.shared import error as shared_error
+from ...models.shared import pet as shared_pet
 from typing import Optional
 
 
