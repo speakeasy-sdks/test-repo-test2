@@ -26,7 +26,7 @@ class Pets:
         
         http_res = client.request('POST', url, headers=headers)
         content_type = http_res.headers.get('Content-Type')
-
+        
         res = operations.CreatePetsResponse(status_code=http_res.status_code, content_type=content_type, raw_response=http_res)
         
         if http_res.status_code == 201:
@@ -58,8 +58,8 @@ class Pets:
         
         http_res = client.request('GET', url, params=query_params, headers=headers)
         content_type = http_res.headers.get('Content-Type')
-
-        res = operations.ListPetsResponse(status_code=http_res.status_code, content_type=content_type, raw_response=http_res)
+        
+        res = operations.ListPetsResponse(status_code=http_res.status_code, content_type=content_type, raw_response=http_res, headers=None)
         
         if http_res.status_code == 200:
             res.headers = http_res.headers
@@ -95,7 +95,7 @@ class Pets:
         
         http_res = client.request('GET', url, headers=headers)
         content_type = http_res.headers.get('Content-Type')
-
+        
         res = operations.ShowPetByIDResponse(status_code=http_res.status_code, content_type=content_type, raw_response=http_res)
         
         if http_res.status_code == 200:
