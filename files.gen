@@ -8,6 +8,7 @@ src/test/utils/__init__.py
 src/test/utils/retries.py
 src/test/utils/utils.py
 src/test/models/errors/sdkerror.py
+tests/helpers.py
 src/test/models/operations/createpets.py
 src/test/models/operations/listpets.py
 src/test/models/operations/showpetbyid.py
