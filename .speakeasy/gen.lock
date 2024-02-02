@@ -4,15 +4,15 @@ management:
   docChecksum: 2516596125ef223fbbef6c434d22eaac
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.245.1
-  releaseVersion: 0.11.4
-  configChecksum: 8468bc8b7407b27215139a89192c5663
+  generationVersion: 2.248.1
+  releaseVersion: 0.12.0
+  configChecksum: ee2295e0ac4b568c0c1a60daa0115736
   repoURL: https://github.com/speakeasy-sdks/test-repo-test2.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test-repo-test2.git
 features:
   python:
-    core: 4.4.3
+    core: 4.4.4
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/test/sdkconfiguration.py
