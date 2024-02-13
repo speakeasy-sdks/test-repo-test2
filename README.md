@@ -56,6 +56,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import test
+from test.models import errors
 
 s = test.Test()
 
@@ -64,7 +65,7 @@ res = None
 try:
     res = s.pets.create_pets()
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.status_code == 200:
