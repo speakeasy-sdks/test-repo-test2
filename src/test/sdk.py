@@ -3,6 +3,7 @@
 import requests as requests_http
 from .pets import Pets
 from .sdkconfiguration import SDKConfiguration
+from .utils.retries import RetryConfig
 from test import utils
 from test._hooks import SDKHooks
 from typing import Dict, Optional
@@ -17,7 +18,7 @@ class Test:
                  server_url: Optional[str] = None,
                  url_params: Optional[Dict[str, str]] = None,
                  client: Optional[requests_http.Session] = None,
-                 retry_config: Optional[utils.RetryConfig] = None
+                 retry_config: Optional[RetryConfig] = None
                  ) -> None:
         """Instantiates the SDK configuring it with the provided parameters.
 
@@ -30,7 +31,7 @@ class Test:
         :param client: The requests.Session HTTP client to use for all operations
         :type client: requests_http.Session
         :param retry_config: The utils.RetryConfig to use globally
-        :type retry_config: utils.RetryConfig
+        :type retry_config: RetryConfig
         """
         if client is None:
             client = requests_http.Session()
@@ -38,6 +39,7 @@ class Test:
         if server_url is not None:
             if url_params is not None:
                 server_url = utils.template_url(server_url, url_params)
+    
 
         self.sdk_configuration = SDKConfiguration(
             client,
@@ -54,7 +56,7 @@ class Test:
             self.sdk_configuration.server_url = server_url
 
         # pylint: disable=protected-access
-        self.sdk_configuration._hooks = hooks
+        self.sdk_configuration.__dict__['_hooks'] = hooks
 
         self._init_sdks()
 
