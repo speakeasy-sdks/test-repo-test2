@@ -18,7 +18,6 @@ import test
 
 s = test.Test()
 
-
 res = s.pets.create_pets()
 
 if res is not None:
@@ -49,9 +48,7 @@ from test.models import operations
 
 s = test.Test()
 
-req = operations.ListPetsRequest()
-
-res = s.pets.list_pets(req)
+res = s.pets.list_pets(request=operations.ListPetsRequest())
 
 if res.pets is not None:
     # handle response
@@ -87,11 +84,9 @@ from test.models import operations
 
 s = test.Test()
 
-req = operations.ShowPetByIDRequest(
+res = s.pets.show_pet_by_id(request=operations.ShowPetByIDRequest(
     pet_id='<value>',
-)
-
-res = s.pets.show_pet_by_id(req)
+))
 
 if res.pet is not None:
     # handle response

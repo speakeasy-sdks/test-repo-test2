@@ -4,7 +4,6 @@ import test
 
 s = test.Test()
 
-
 res = s.pets.create_pets()
 
 if res is not None:

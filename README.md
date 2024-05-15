@@ -18,7 +18,6 @@ import test
 
 s = test.Test()
 
-
 res = s.pets.create_pets()
 
 if res is not None:
@@ -61,7 +60,6 @@ from test.models import errors
 
 s = test.Test()
 
-
 res = None
 try:
     res = s.pets.create_pets()
@@ -98,7 +96,6 @@ s = test.Test(
     server_idx=0,
 )
 
-
 res = s.pets.create_pets()
 
 if res is not None:
@@ -117,7 +114,6 @@ import test
 s = test.Test(
     server_url="http://petstore.swagger.io/v1",
 )
-
 
 res = s.pets.create_pets()
 
